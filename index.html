@@ -559,7 +559,7 @@ function example(){
   order.forEach(k=>{dataState[k]={text:e[k]||'',status:'hyp',evidence:''}});
   saveLocal();
   currentStep=0;
-  switchView('guided');
+  switchView('map');
   const btn=byId('exampleBtn');const old=btn.textContent;btn.textContent='Ejemplo cargado ✓';setTimeout(()=>btn.textContent=old,1400);
 }
 byId('exampleBtn').addEventListener('click',example);
